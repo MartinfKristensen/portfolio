@@ -18,7 +18,6 @@
 /* Media Queres */
 @media (max-width: 1099px) {
 	.panel {
-		height: 100vh;
 		/* flex-wrap: wrap; */
 		flex-direction: column;
 	}
