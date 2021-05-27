@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #313131;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3498db;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #376f94;
+}
+
+.clr {
+	clear: both;
+}
+
+/* Media Queres */
+@media (max-width: 1099px) {
+	.panel {
+		/* flex-wrap: wrap; */
+		flex-direction: column;
+	}
+}
+/* Normal */
+@media (min-width: 1100px) and (max-width: 1500px) {
+	.projects .card {
+		margin: 0px 20px;
+	}
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #eee;
+}
+
+/* Navbar */
+.nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	background: #eee;
+	height: 7vh;
+	font-weight: 300;
+	font-size: 1.2rem;
+}
+
+.nav h1 {
+	color: #3498db;
+	font-weight: 300;
+}
+
+.nav ul {
+	list-style-type: none;
+	display: flex;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #3498db;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.nav ul li a:hover {
+	background: #ddd;
+}
+
+/* Hero IMG */
+.hero {
+	background-image: url("pexels-luis-gomes-546819.jpg") no-repeat center center/cover;
+	height: 93vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hero #hero-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 600px;
+	height: 250px;
+	background: #222;
+	opacity: 85%;
+	border-radius: 5px;
+	color: #eee;
+}
+.hero #hero-container #hero-wrap {
+	width: 80%;
+}
+.hero #hero-container #hero-wrap h2 {
+	margin-bottom: 10px;
+}
+
+/* Projects */
+.panel {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	margin: 4rem;
+}
+
+.projects .card-wrap {
+	width: 300px;
+}
+
+.projects .card {
+	background: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 400px;
+	height: 400px;
+	border-radius: 15px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.projects .card:hover {
+	transform: scale(1.01);
+	transition: transform ease 0.3s;
+}
+
+.projects .card .btn {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: #3498db;
+}
+
+.projects .card .btn:hover {
+	background: #376f94;
+}
+
+/* About */
+.panel .about {
+	background: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 90%;
+	height: 100%;
+	border-radius: 15px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 20px 10px;
+}
+
+.panel .about:hover {
+	transform: scale(1.01);
+	transition: transform ease 0.3s;
+}
+
+.panel .about h2 {
+	text-decoration: underline #3498db 2px;
+	text-underline-offset: 10px;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 3vh;
+	width: 100%;
+	background: #212121;
+	color: #ccc;
+}
+
+.footer a {
+	color: #3498db;
+}
