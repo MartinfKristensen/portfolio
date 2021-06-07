@@ -109,6 +109,12 @@ body {
 }
 
 /* Projects */
+.port {
+	text-align: center;
+	text-decoration: underline #3498db 2px;
+	text-underline-offset: 10px;
+	margin-top: 50px;
+}
 .panel {
 	display: flex;
 	text-align: center;
@@ -120,6 +126,11 @@ body {
 
 .projects .card-wrap {
 	width: 300px;
+}
+
+.projects .card .card-wrap h2 {
+	text-decoration: underline #3498db 2px;
+	text-underline-offset: 10px;
 }
 
 .projects .card {
@@ -165,11 +176,15 @@ body {
 	text-align: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-	width: 90%;
+	width: 70%;
 	height: 100%;
 	border-radius: 15px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	padding: 20px 10px;
+}
+
+.panel .about p {
+	width: 60%;
 }
 
 .panel .about:hover {
@@ -180,6 +195,41 @@ body {
 .panel .about h2 {
 	text-decoration: underline #3498db 2px;
 	text-underline-offset: 10px;
+}
+
+.panel .about p a {
+	color: #3498db;
+}
+
+.panel .about p a:hover {
+	color: #158bda;
+}
+
+/* Stack */
+.stack {
+	text-align: center;
+}
+
+.stack i {
+	margin-left: 10px;
+}
+
+.stack .fa-html5 {
+	color: #e44d26;
+}
+.stack .fa-css3 {
+	color: #008dd2;
+}
+.stack .fa-js-square {
+	color: #f7e018;
+}
+.stack .fa-python {
+	color: #366c9c;
+}
+
+.stack p {
+	font-size: 12px;
+	text-align: center;
 }
 
 .footer {
@@ -195,4 +245,5 @@ body {
 
 .footer a {
 	color: #3498db;
+	margin: 10px;
 }
